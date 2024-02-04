@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webcam Stream with Flask</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="video-container">
+            <img src="{{ url_for('video_feed') }}" alt="Webcam Stream" width="640" height="480">
+        </div>
+        <div class="form-container">
+            <form class="color_form" method="post" action="{{ url_for('update_color') }}">
+                <label >Lower Hue :</label>
+                <input type="number" name="lower_hue" class="lower_hue" value="{{ default_values['lower_hue'] }}" min="0" max="180" required>
+                <br>
+                <label >Lower Saturation :</label>
+                <input type="number" name="lower_saturation" class="lower_saturation" value="{{ default_values['lower_saturation'] }}" min="0" max="255" required>
+                <br>
+                <label >Lower Value :</label>
+                <input type="number" name="lower_value" class="lower_value" value="{{ default_values['lower_value'] }}" min="0" max="255" required>
+                <br>
+                <label >Upper Hue :</label>
+                <input type="number" name="upper_hue" class="upper_hue" value="{{ default_values['upper_hue'] }}" min="0" max="180" required>
+                <br>
+                <label >Upper Saturation :</label>
+                <input type="number" name="upper_saturation" class="upper_saturation" value="{{ default_values['upper_saturation'] }}" min="0" max="255" required>
+                <br>
+                <label >Upper Value :</label>
+                <input type="number" name="upper_value" class="upper_value" value="{{ default_values['upper_value'] }}" min="0" max="255" required>
+                <br>
+                <button class="update_btn" type="button">Update Color</button>
+            </form>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</body>
+</html>
