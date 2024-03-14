@@ -9,9 +9,6 @@ The Invisibility Cloak project is an application that replaces an image with the
    ```
     python app.py  
     ```
-   ```
-  or py app.py
-   ```
 3. Open your web browser and go to `http://localhost:5500` to access the application.
 
 ## Features
