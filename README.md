@@ -5,12 +5,11 @@ The Invisibility Cloak project is an application that replaces an image with the
 
 ## How to Run
 1. Clone or download the repository to your local machine.
-    ```
 2. Run the Flask application using the following command:
-    ```
+3. ```
     python app.py
     ```
-3. Open your web browser and go to `http://localhost:5500` to access the application.
+4. Open your web browser and go to `http://localhost:5500` to access the application.
 
 ## Features
 - Replace an image with the background using bitwise operations and masking.
