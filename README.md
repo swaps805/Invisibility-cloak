@@ -20,5 +20,6 @@ The Invisibility Cloak project is an application that replaces an image with the
 
 ## Preview
 The robot is being cloaked by a red colored cloak which is being being replaced by the existing backround
+
 ![ss1](inv_img/back.jpg)
 ![ss2](inv_img/cloak.jpg)
